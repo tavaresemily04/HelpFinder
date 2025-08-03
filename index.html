@@ -28,9 +28,14 @@
 
    <section class="recipes">
   <h2>What Can I Make?</h2>
-  <input type="text" id="ingredientInput" placeholder="e.g. bread, peanut butter, banana" />
+
+  <p>Select the ingredients you have:</p>
+  <div id="ingredientList"></div>
+
   <button onclick="findMatchingRecipes()">Find Recipes</button>
-  <ul id="recipeList"></ul>
+
+  <h3>Recipes You Can Make:</h3>
+  <ul id="matchingRecipes"></ul>
 </section>
 
   <footer>
