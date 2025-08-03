@@ -26,12 +26,12 @@
       <ul id="shelterResults"></ul>
     </section>
 
-    <section class="recipes">
-      <h2>Suggested Meals</h2>
-      <button onclick="showRecipe()">Show a Recipe</button>
-      <div id="recipeBox"></div>
-    </section>
-  </main>
+   <section class="recipes">
+  <h2>What Can I Make?</h2>
+  <input type="text" id="ingredientInput" placeholder="e.g. bread, peanut butter, banana" />
+  <button onclick="findMatchingRecipes()">Find Recipes</button>
+  <ul id="recipeList"></ul>
+</section>
 
   <footer>
     <p>&copy; 2025 Help Finder</p>
