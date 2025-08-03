@@ -4,10 +4,6 @@
     "ingredients": ["bread", "peanut butter", "jam"]
   },
   {
-    "name": "Microwave Oatmeal",
-    "ingredients": ["oats", "water", "banana"]
-  },
-  {
     "name": "Ramen Upgrade",
     "ingredients": ["ramen", "egg", "canned veggies"]
   },
@@ -16,7 +12,8 @@
     "ingredients": ["tortilla", "tuna", "mayo"]
   },
   {
-    "name": "Rice & Beans Bowl",
-    "ingredients": ["rice", "beans", "salt"]
+    "name": "Microwave Oatmeal",
+    "ingredients": ["oats", "water", "banana"]
   }
 ]
+
