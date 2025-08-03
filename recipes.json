@@ -1,6 +1,22 @@
 [
-  "PB&J Sandwich - Bread, Peanut Butter, Jam",
-  "Microwave Oatmeal - Oats, Water, Banana",
-  "Ramen Upgrade - Ramen, Egg, Canned Veggies",
-  "Tuna Wrap - Tortilla, Tuna, Mayo"
+  {
+    "name": "PB&J Sandwich",
+    "ingredients": ["bread", "peanut butter", "jam"]
+  },
+  {
+    "name": "Microwave Oatmeal",
+    "ingredients": ["oats", "water", "banana"]
+  },
+  {
+    "name": "Ramen Upgrade",
+    "ingredients": ["ramen", "egg", "canned veggies"]
+  },
+  {
+    "name": "Tuna Wrap",
+    "ingredients": ["tortilla", "tuna", "mayo"]
+  },
+  {
+    "name": "Rice & Beans Bowl",
+    "ingredients": ["rice", "beans", "salt"]
+  }
 ]
