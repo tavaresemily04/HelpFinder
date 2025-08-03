@@ -1,3 +1,4 @@
+// Search food pantries and shelters by ZIP code
 async function searchResources() {
   const zip = document.getElementById("zipInput").value.trim();
   if (!zip) return alert("Please enter a ZIP code.");
@@ -30,9 +31,16 @@ async function searchResources() {
   });
 }
 
+// Show a random recipe from the local JSON file
 async function showRecipe() {
-  const res = await fetch("recipes.json");
-  const recipes = await res.json();
-  const random = recipes[Math.floor(Math.random() * recipes.length)];
-  document.getElementById("recipeBox").textContent = `🍲 ${random}`;
+  try {
+    const res = await fetch("recipes.json");
+    if (!res.ok) throw new Error("File not found");
+    const recipes = await res.json();
+    const random = recipes[Math.floor(Math.random() * recipes.length)];
+    document.getElementById("recipeBox").textContent = `🍲 ${random}`;
+  } catch (error) {
+    document.getElementById("recipeBox").textContent = "Sorry, recipe list could not be loaded.";
+    console.error("Error fetching recipes:", error);
+  }
 }
