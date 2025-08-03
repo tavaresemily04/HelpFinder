@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Help Finder</h1>
+    <p>Find food, shelter, and meals near you</p>
+  </header>
+
+  <main>
+    <section class="search">
+      <input type="text" id="zipInput" placeholder="Enter ZIP code..." />
+      <button onclick="searchResources()">Search</button>
+    </section>
+
+    <section class="results">
+      <h2>Food Pantries</h2>
+      <ul id="pantryResults"></ul>
+
+      <h2>Shelters</h2>
+      <ul id="shelterResults"></ul>
+    </section>
+
+    <section class="recipes">
+      <h2>Suggested Meals</h2>
+      <button onclick="showRecipe()">Show a Recipe</button>
+      <div id="recipeBox"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Help Finder</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
